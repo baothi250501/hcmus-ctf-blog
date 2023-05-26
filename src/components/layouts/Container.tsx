@@ -1,6 +1,7 @@
 import { NextSeo, NextSeoProps } from 'next-seo';
 import { ReactNode } from 'react';
 import { useRouter } from 'next/router';
+import { baseUrl } from '@/lib/constants';
 
 type ContainerProps = Omit<NextSeoProps, 'childrent'> & {
   chiladren: ReactNode;

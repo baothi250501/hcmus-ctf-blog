@@ -18,6 +18,10 @@ module.exports = {
   parserOptions: {
     tsconfigRootDir: __dirname,
     project: 'tsconfig.json',
+    ecmaVersion: "latest"
+  },
+  env: {
+      es6: true
   },
   ignorePatterns: [
     // Hacky way to silence @yarnpkg/doctor about node_modules detection
@@ -399,5 +403,20 @@ module.exports = {
     //       '@typescript-eslint/naming-convention': ['off'],
     //     },
     //   },
+  ],
+  overrides: [
+    {
+      files: ['src/pages/\\_*.{ts,tsx}'],
+      rules: {
+        'react/display-name': 'off',
+      },
+    },
+    {
+      // TODO; remove if not necessary
+      files: ['src/**/*.{ts,tsx}'],
+      rules: {
+        '@typescript-eslint/naming-convention': ['off'],
+      },
+    },
   ],
 };

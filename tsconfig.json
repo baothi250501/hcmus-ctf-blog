@@ -18,8 +18,14 @@
     "baseUrl": "./src", //
     "jsxImportSource": "@emotion/react",
     "paths": {
-      "@/*": ["./src/*"],
-      "@/styles/*": ["./styles/*"]
+      "@/public/*": ["../public/*"],
+      "@/styles/*": ["./styles/*"],
+      "@/api/*": ["./api/*"],
+      "@/lib/*": ["./lib/*"],
+      "@/hooks/*": ["./hooks/*"],
+      "@/modules/*": ["./modules/*"],
+      "@/components/*": ["./components/*"],
+      "@/pages/*": ["./pages/*"],
     },
     "newLine": "lf" //
   },
