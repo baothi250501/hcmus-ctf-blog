@@ -2,5 +2,16 @@
     "i18n": {
         "english": "English",
         "vietnamese": "Vietnamese"
+    },
+    "navigate": {
+        "home": "HomePage",
+        "about-us": "About Us",
+        "hcmus-ctf": "HCMUS CTF Contest"
+    },
+    "contact": {
+        "name": "Computer Security Club",
+        "faculty": "Faculty of Information Technology",
+        "university": "University of Science, VNU-HCM",
+        "location": "227 Nguyen Van Cu street, District 5, HCM City, Vietnam"
     }
 }

@@ -1,22 +1,23 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
-    "target": "esnext", //
-    "lib": ["dom", "dom.iterable", "esnext"], //
-    "allowJs": true, //
-    "skipLibCheck": true, //
-    "strict": true, //
-    "forceConsistentCasingInFileNames": true, //
-    "noEmit": true, //
-    "esModuleInterop": true, //
-    "module": "esnext", //
-    "moduleResolution": "node", //
-    "resolveJsonModule": true, //
-    "isolatedModules": true, //
-    "jsx": "preserve", //
-    "incremental": true, //
-    "baseUrl": "./src", //
+    "baseUrl": "./src",
+    "target": "esnext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "esnext",
+    "jsx": "preserve",
     "jsxImportSource": "@emotion/react",
+    "strict": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "incremental": true,
+    "newLine": "lf",
     "paths": {
       "@/public/*": ["../public/*"],
       "@/styles/*": ["./styles/*"],
@@ -25,10 +26,10 @@
       "@/hooks/*": ["./hooks/*"],
       "@/modules/*": ["./modules/*"],
       "@/components/*": ["./components/*"],
-      "@/pages/*": ["./pages/*"],
-    },
-    "newLine": "lf" //
+      "@/pages/*": ["./pages/*"]
+    }
   },
+  "exclude": ["**/node_modules", "**/.*/"],
   "include": [
     "next-env.d.ts",
     "**/*.ts",
@@ -38,7 +39,8 @@
     "**/*.cjs",
     "**/*.mjs",
     "**/*.jsx",
-    "**/*.json"
-  ],
-  "exclude": ["node_modules", ".*/"]
+    "**/*.json",
+    "./cache.config.js"
+  ]
 }
+      

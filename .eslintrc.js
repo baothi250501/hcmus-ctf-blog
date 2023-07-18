@@ -50,6 +50,8 @@ module.exports = {
     },
   },
   extends: [
+    // Add specific rules for nextjs
+    'plugin:@next/next/core-web-vitals',
     //   /**
     //    * Custom config base for projects using typescript / javascript.
     //    */
@@ -404,6 +406,13 @@ module.exports = {
     //     },
     //   },
   ],
+  rules: {
+    // https://github.com/vercel/next.js/discussions/16832
+    '@next/next/no-img-element': 'off',
+    // For the sake of example
+    // https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md
+    'jsx-a11y/anchor-is-valid': 'off',
+  },
   overrides: [
     {
       files: ['src/pages/\\_*.{ts,tsx}'],

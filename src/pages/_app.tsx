@@ -1,4 +1,3 @@
-import '@/styles/globals.css';
 import { Hydrate } from '@tanstack/react-query';
 import { AppProviders } from 'AppProviders';
 import { appWithTranslation } from 'next-i18next';
@@ -9,6 +8,8 @@ import nProgress from 'nprogress';
 import { useEffect } from 'react';
 import { ToastContainer } from 'react-toastify';
 import nextI18nextConfig from '../../next-i18next.config';
+
+import '../styles/global.css';
 
 export type AppProps = NextAppProps & {
   err?: Error;

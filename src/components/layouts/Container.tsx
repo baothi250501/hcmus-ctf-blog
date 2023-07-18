@@ -2,9 +2,12 @@ import { NextSeo, NextSeoProps } from 'next-seo';
 import { ReactNode } from 'react';
 import { useRouter } from 'next/router';
 import { baseUrl } from '@/lib/constants';
+import ButtonScrollTop from './ButtonScrollTop';
+import Footer from './Footer';
+import Header from './Header';
 
-type ContainerProps = Omit<NextSeoProps, 'childrent'> & {
-  chiladren: ReactNode;
+type ContainerProps = Omit<NextSeoProps, 'children'> & {
+  children: ReactNode;
   blank?: boolean;
 };
 export default function Container({
@@ -46,10 +49,14 @@ export default function Container({
         }}
         twitter={{
           cardType: 'summary_large_image',
-          site: '@ahamove',
+          site: '@blackpinker',
         }}
         {...restProps}
-      ></NextSeo>
+      />
+      {blank ? null : <Header />}
+      {children}
+      <ButtonScrollTop />
+      {blank ? null : <Footer />}
     </>
   );
 }

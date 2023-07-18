@@ -3,7 +3,7 @@ const sharedTheme = require('./src/themes/tailwind/tailwind.theme');
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/shared-components/**/*.{js,ts,jsx,tsx}',
+    './src/components/**/*.{js,ts,jsx,tsx}',
     './src/modules/**/*.{js,ts,jsx,tsx}',
     './src/pages/**/*.{js,ts,jsx,tsx}',
   ],
@@ -27,6 +27,26 @@ module.exports = {
         body16: ['16px', '24px'], // bold | medium
         body14: ['14px', '22px'], // semibold
         caption12: ['12px', '18px'], // semibold
+      },
+      colors: {
+        'primary-10': '#e7e8ea',
+        'primary-20': '#b6bac1',
+        'primary-30': '#545e6e',
+        'primary-40': '#233045',
+        'primary-50': '#0a1930',
+        'primary-60': '#071222',
+        'primary-70': '#050d18',
+        'primary-80': '#03070e',
+        'primary-90': '#010205',
+        'secondary-10': '#f5d9e9',
+        'secondary-20': '#eec0da',
+        'secondary-30': '#e7a7cb',
+        'secondary-40': '#e39ac4',
+        'secondary-50': '#dc81b5',
+        'secondary-60': '#ed619f',
+        'secondary-70': '#ea4a91',
+        'secondary-80': '#e83484',
+        'secondary-90': '#e51d76',
       },
       boxShadow: {
         shadow1: '0px 4px 40px rgba(43, 89, 255, 0.08)',

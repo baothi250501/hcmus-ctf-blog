@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'SVN Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  src: local('SVN Gilroy'),
+    url(/fonts/svn-gilroy-regular.ttf) format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN Gilroy';
+  font-style: normal;
+  font-weight: 500;
+  src: local('SVN Gilroy'), url(/fonts/svn-gilroy-medium.ttf) format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  src: local('SVN Gilroy'),
+    url(/fonts/svn-gilroy-semibold.ttf) format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  src: local('SVN Gilroy'), url(/fonts/svn-gilroy-bold.ttf) format('truetype');
+  font-display: swap;
+}
+
+::selection {
+  @apply bg-primary-50 text-white;
+}
+
+html {
+  min-width: 360px;
+  scroll-behavior: smooth;
+}
+
+#__next {
+  @apply dark:bg-neutral-900 font-gilroy bg-white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#nprogress .bar {
+  @apply bg-primary-50 fixed inset-x-0 top-0 z-50 h-[3px];
+}

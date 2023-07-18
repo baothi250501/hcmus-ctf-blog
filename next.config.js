@@ -3,7 +3,7 @@
 // https://nextjs.org/docs/api-reference/next.config.js/introduction
 // https://docs.sentry.io/platforms/javascript/guides/nextjs/
 
-const pc =require('picocolors');
+// const pc =require('picocolors');
 const { i18n } = require('./next-i18next.config');
 const packageJson = require('./package.json');
 
