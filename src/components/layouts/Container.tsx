@@ -53,10 +53,10 @@ export default function Container({
         }}
         {...restProps}
       />
-      {blank ? null : <Header />}
+      {/* {blank ? null : <Header />} */}
       {children}
       <ButtonScrollTop />
-      {blank ? null : <Footer />}
+      {/* {blank ? null : <Footer />} */}
     </>
   );
 }
