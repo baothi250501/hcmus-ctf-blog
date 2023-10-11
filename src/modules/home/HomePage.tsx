@@ -9,6 +9,9 @@ import Pagination from '@mui/material/Pagination';
 import { PaginationItem } from '@mui/material';
 import CurvedNavBar from '@/components/bottomNavBar/PostViewer';
 import PostViewer from '@/components/bottomNavBar/PostViewer';
+import SearchBar from '@/components/bottomNavBar/SearchBar';
+import StatisticsPage from '@/components/bottomNavBar/StatisticPage';
+import CreatePost from '@/components/bottomNavBar/CreatePost';
 export default function HomePage({ isSsrMobile }: HomeProps) {
   const comments = [
     { username: 'Thi Nguyễn', content: 'Wow, sự kiện này hay quá!' },
@@ -19,11 +22,14 @@ export default function HomePage({ isSsrMobile }: HomeProps) {
   return (
     <Container>
       {/* <CurvedNavBar/> */}
+      {/* <SearchBar />
       <PostViewer
         username="Uyên Lê"
         avatar="https://via.placeholder.com/50x50"
         comments={comments}
-      />
+      /> */}
+      <CreatePost />
+      {/* <StatisticsPage /> */}
       <main>
         {/* {courses && courses.data.length > 0 ? (
           <>
